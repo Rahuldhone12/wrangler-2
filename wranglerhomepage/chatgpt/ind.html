@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Effect</title>
+    <style>
+        /* Hide the tag initially */
+        .hidden-tag {
+            display: none;
+           
+            
+        }
+        .showt{
+            background-color: red;
+            height: 20px;
+            width: 100px;
+        }
+        #hiddenTag {
+            background-color: red;
+            height: 100px ;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Word to hover over -->
+<p  class="showt" onmouseover="showTag()" onmouseout="hideTag()">Hover over me</p>
+
+<!-- Hidden tag that will be shown on hover -->
+
+    <div id="hiddenTag"class="hidden-tag" >
+        <ul>
+            <li>how</li>
+            <li>how</li>
+            <li>how</li>
+            <li>how</li>
+        </ul>
+    </div>
+    <span> how was the day putty </span>
+
+
+<script>
+    function showTag() {
+        // Get the hidden tag element
+        let hiddenTag = document.getElementById('hiddenTag');
+
+        // Show the hidden tag
+        hiddenTag.style.display = 'block';
+    }
+
+    function hideTag() {
+        // Get the hidden tag element
+        let hiddenTag = document.getElementById('hiddenTag');
+
+        // Hide the hidden tag
+        hiddenTag.style.display = 'none';
+    }
+</script>
+
+<button>click me</button>
+<div class="btn1">
+    <a href="">new wear</a>
+    <a href="">new wear</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

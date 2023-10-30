@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Add your styles here */
+    #hidden {
+      display: none;
+      /* Add any additional styling as needed */
+    }
+  </style>
+  <script>
+    // JavaScript functions to show and hide content
+    function showTag() {
+      document.getElementById('hidden').style.display = 'block';
+    }
+
+    function hideTag() {
+      // Check if the mouse is over the hidden element before hiding it
+      if (!isMouseOverHidden()) {
+        document.getElementById('hidden').style.display = 'none';
+      }
+    }
+
+    function isMouseOverHidden() {
+      var hiddenElement = document.getElementById('hidden');
+      var rect = hiddenElement.getBoundingClientRect();
+      return (
+        event.clientX >= rect.left &&
+        event.clientX <= rect.right &&
+        event.clientY >= rect.top &&
+        event.clientY <= rect.bottom
+      );
+    }
+  </script>
+</head>
+<body>
+
+<a href="#" onmouseover="showTag()" onmouseout="hideTag()">NEW IN</a>
+
+<div id="hidden" onmouseover="showTag()" onmouseout="hideTag()">
+  <!-- Content for NEW IN -->
+  <ul>
+    <li>TOP WEAR new in</li>
+    <li>TOP WEAR</li>
+    <li>TOP WEAR</li>
+    <li>TOP WEAR</li>
+    <li>TOP WEAR</li>
+    <li>TOP WEAR</li>
+  </ul>
+</div>
+
+</body>
+</html>

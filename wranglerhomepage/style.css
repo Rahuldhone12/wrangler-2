@@ -1,0 +1,160 @@
+*body{
+    width: 100%;
+    height: 100%;
+}
+.cantainer-fluid{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+.heade{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: right;
+   
+}
+.heade a{
+    margin: 20px;
+
+    text-decoration: none;
+    color: whitesmoke;
+}
+.img-1{
+    height: 50px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    
+}
+.header-2{
+    margin-top: 100px;
+}
+.head{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.col a {
+  text-decoration: none;
+  color: whitesmoke;
+  margin: 20px;
+  position: relative;
+}
+.col a::after{
+    content:'' ;
+    width: 0;
+    height: 4px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.5s;
+
+}
+.col a:hover::after{
+    width: 100%;
+}
+
+  #hidden{
+    display: none;
+    background-color: white;
+    height: 150px;
+    width: 200px;
+}
+#hidden1{
+    display: none;
+    margin-left: 100px;
+     background-color: white;
+    height: 150px;
+    width: 200px;
+}
+#hidden2{
+    display: none;
+    margin-left: 230px;
+     background-color: white;
+    height: 150px;
+    width: 200px;
+}
+#hidden3{
+    display: none;
+    margin-left: 300px;
+     background-color: white;
+    height: 150px;
+    width: 200px;
+}
+#hidden4{
+    display: none;
+    margin-left: 450px;
+     background-color: white;
+    height: 150px;
+    width: 200px;
+}
+#hidden5{
+    display: none;
+    margin-left: 550px;
+     background-color: white;
+    height: 150px;
+    width: 200px;
+}
+#hidden6{
+    display: none;
+    margin-left: 650px;
+     background-color: white;
+    height: 150px;
+    width: 200px;
+} 
+
+
+.options{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    margin-left: 100px;
+}
+ul li{
+   list-style: none;
+}
+.offer{
+    height: 30px;  
+   
+}
+.offer{
+    height: 35px;
+}
+.neck {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.neck li {
+    text-decoration: none;
+    text-align: center;
+    list-style: none; 
+  }
+
+.video{
+    height: 460px;
+    background-color: rgb(208, 195, 195) ;
+    object-fit: cover;
+}
+
+.video-side{
+    align-items: start;
+}
+.img{
+   height: 100px;
+}
+.whatsapp{
+    position: fixed;
+}
+.img-2{
+   height: 500px;
+}
+
+  
