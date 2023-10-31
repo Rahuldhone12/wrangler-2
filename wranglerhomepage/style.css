@@ -149,9 +149,11 @@ ul li{
 }
 .img{
    height: 100px;
+   width: 200px;
 }
 .whatsapp{
     position: fixed;
+    
 }
 .img-2{
    height: 500px;
